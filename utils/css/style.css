@@ -6,9 +6,11 @@ body {
 }
 
 .main-header {
-    background-color: #6C4BFD; /* Cor roxa do header */
+    background-color: #6C4BFD; 
     color: white;
-    padding: 10px 0;
+    padding: 10px 0;    
+    width: 100%;
+    position: fixed;
 }
 
 .container {
@@ -29,7 +31,7 @@ body {
 
 
 .logo img {
-    max-height: 40px; /* Ajuste a altura do logo */
+    max-height: 40px;
     margin-right: 10px;
 }
 
