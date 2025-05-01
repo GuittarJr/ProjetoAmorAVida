@@ -9,8 +9,6 @@ body {
     background-color: #6C4BFD; 
     color: white;
     padding: 10px 0;    
-    width: 100%;
-    position: fixed;
 }
 
 .container {
@@ -63,4 +61,49 @@ body {
 
 .main-nav li a:active {
     border-bottom: 3px solid white;
+}
+
+#aboutUs{
+    margin: 4em auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainPlan {
+  text-align: center; 
+  padding: 40px;
+}
+
+.mainTitle {
+  font-size: 2.5em; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 15px; 
+}
+
+.highlight {
+  color: #6A5ACD; 
+}
+
+.subtitulo {
+  font-size: 1.1em;
+  color: #000;
+  margin-bottom: 30px; 
+}
+
+.mainButton {
+  display: inline-block; 
+  background-color: #6A5ACD; 
+  color: white; 
+  padding: 15px 30px; 
+  text-decoration: none; 
+  border-radius: 25px; 
+  font-weight: bold; 
+  font-size: 1.2em; 
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 3px rgb(103, 102, 102);
+}
+
+.mainButton:hover {
+  background-color: #533bed; 
 }
