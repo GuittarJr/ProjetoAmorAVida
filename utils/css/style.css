@@ -58,30 +58,30 @@ body {
   flex-direction: column;
   background-color: #6C4BFD;
   position: absolute;
-  top: 60px; /* Ajuste conforme a altura do seu header */
+  top: 60px; 
   left: 0;
   width: 100%;
-  z-index: 10; /* Garante que o menu fique acima de outros elementos */
+  z-index: 10; 
   padding: 20px 0;
 }
 .main-nav.open li {
   margin: 10px 0;
-  text-align: center; /* Centraliza os itens do menu no mobile */
+  text-align: center; 
 }
 
 .main-nav.open li a {
-  letter-spacing: 2px; /* Reduz o espaçamento no mobile para melhor leitura */
-  border-bottom: none; /* Remove a borda inferior no mobile */
-  display: block; /* Faz os links ocuparem a largura total */
+  letter-spacing: 2px;
+  border-bottom: none; 
+  display: block;
 }
 
 .main-nav.open li a:hover {
-  letter-spacing: 4px; /* Mantém o efeito de hover no mobile também */
-  background-color: rgba(255, 255, 255, 0.1); /* Feedback visual ao passar o mouse */
+  letter-spacing: 4px; 
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .main-nav.open li a:active {
-  background-color: rgba(255, 255, 255, 0.2); /* Feedback visual ao clicar */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .main-nav menu {
@@ -90,7 +90,6 @@ body {
     margin: 0;
     display: flex;
 }
-
 
 .main-nav li {
     margin-left: 20px;
@@ -171,6 +170,73 @@ body {
 
 .mainButton:hover {
   background-color: #533bed; 
+}
+
+.cardWrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card{
+  background-color: #A9F04D;
+  border-radius: 20px;
+  width: 285px;
+  height: 402px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center ;
+}
+#services header{
+  width: 80%;
+  margin: 30px auto;
+  text-transform: uppercase;
+}
+.sectionTitle{
+  font-size: 45px;
+}
+.services{
+  margin-bottom: 10px;
+  color: #268FBE;
+  font-weight: bolder;
+}
+
+.card:hover{
+  background-color: #52ADF7;
+}
+
+.cardTitle{
+  border-bottom: 2px solid white;
+  width: 80%;
+  padding: 10px ;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.cardPlan{
+  width: 100%;
+}
+.cardFooter{
+  width: 80%;
+}
+.cardFooter a{
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: #6C4BFD;
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #7372727d;
+  box-shadow: 1px 2px 3px #7372727d ;
+}
+
+.cardFooter a:hover{
+  background-color: #6A5ACD;
+  color: white;
 }
 
 
