@@ -25,12 +25,11 @@ $(document).ready(function() {
         }
       ];
     
-    //Toggle Classe Open (Responsividade)
     mobileBtn.on('click', function() {
         mainNav.toggleClass('open');
     });
 
-    //Gerando Cards
+
     planos.forEach(plano =>{
         const card = $("<div>").addClass("cards");
 
