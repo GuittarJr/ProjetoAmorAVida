@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    padding: 0;
 }
 
 .main-header {
@@ -119,6 +120,7 @@ body {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
     align-items: center;
 }
 .mainPlan {
@@ -177,7 +179,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.card{
+.cards{
   background-color: #A9F04D;
   border-radius: 20px;
   width: 285px;
@@ -186,6 +188,8 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items:center ;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 3px gray;
 }
 #services header{
   width: 80%;
@@ -197,12 +201,13 @@ body {
 }
 .services{
   margin-bottom: 10px;
-  color: #268FBE;
+  color:#6A5ACD;
   font-weight: bolder;
 }
 
-.card:hover{
+.cards:hover{
   background-color: #52ADF7;
+  color: white;
 }
 
 .cardTitle{
@@ -238,8 +243,88 @@ body {
   background-color: #6A5ACD;
   color: white;
 }
+#gratitude{
+  background-image: url("../img/patanatural_interna_jundiaishopping-02.webp");
+  margin: 10px auto;
+  width: 80%;
+  height: 600px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanksMessage{
+  width: 400px;
+  height: max-content;
+  padding: 0 0 10px;
+  background-color: aliceblue;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px black;
+}
+.thanksMessage span{
+  display: block;
+  padding: 10px ;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color:#533bed;
+  color: white;
+  letter-spacing: 2px;
+}
+.thanksMessage p{
+  padding: 10px ;
+}
+
+#mainFooter{
+  margin-bottom: 0;
+  background-color: #6A5ACD;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+#footerTitle{
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.followUs{
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.followUs ul{
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mailSaver{
+  color: white;
+}
+
+.mailSaver button{
+  background-color: white;
+  color: #6A5ACD;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px gray;
+  padding: 10px;
+  border:none;
+}
 
 
+.mailSaver input{
+  padding: 10px ;
+  border-radius: 5px;
+  border: none;
+}
 
 @media (max-width: 800px) {
   .main-nav menu {

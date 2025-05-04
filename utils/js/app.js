@@ -1,7 +1,8 @@
 $(document).ready(function() {
     const mobileBtn = $('.mobile-btn');
     const mainNav = $('.main-nav');
-    const cardWrapper = $(".cardWrapper")
+    const cardWrapper = $(".cardWrapper");
+    const mailSaver = $("#mailSaver")
     const planos = [
         {
           cardTitle: "Plano Au Au",
@@ -23,13 +24,14 @@ $(document).ready(function() {
         }
       ];
     
-    //Toggle Classe Open
+    //Toggle Classe Open (Responsividade)
     mobileBtn.on('click', function() {
         mainNav.toggleClass('open');
     });
 
+    //Gerando Cards
     planos.forEach(plano =>{
-        const card = $("<div>").addClass("card");
+        const card = $("<div>").addClass("cards");
 
         const cardTitle = $("<div>").addClass("cardTitle");
         $("<span>").text(plano.cardTitle).appendTo(cardTitle);
@@ -49,6 +51,8 @@ $(document).ready(function() {
 
         card.append(cardTitle, cardImage, cardPlan, cardFooter);
         cardWrapper.append(card);
-    })
+    });
+
+
 
 });
