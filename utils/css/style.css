@@ -336,6 +336,12 @@ body {
   border: none;
 }
 
+.formContainer{
+  width: 70%;
+  margin: 10px auto;
+
+}
+
 @media (max-width: 900px) {
   .main-nav menu {
       display: none; /* Esconde o menu em telas pequenas inicialmente */
