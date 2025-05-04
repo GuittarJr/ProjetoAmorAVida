@@ -1,8 +1,9 @@
 $(document).ready(function() {
     const mobileBtn = $('.mobile-btn');
     const mainNav = $('.main-nav');
-    const cardWrapper = $(".cardWrapper");
-    const mailSaver = $("#mailSaver")
+    const cardWrapper = $('.cardWrapper');
+    const mailSaver = $('#mailSender');
+    const catchMail = $('#catchMail');
     const planos = [
         {
           cardTitle: "Plano Au Au",
@@ -47,12 +48,18 @@ $(document).ready(function() {
         ul.appendTo(cardPlan);
 
         const cardFooter = $("<div>").addClass("cardFooter");
-        $("<a>").attr("href", "#").text(`R$ ${plano.cardPrice.toFixed(2).replace('.', ',')}`).appendTo(cardFooter);
+        $("<a>").attr("href", "./form.html").text(`R$ ${plano.cardPrice.toFixed(2).replace('.', ',')}`).appendTo(cardFooter);
 
         card.append(cardTitle, cardImage, cardPlan, cardFooter);
         cardWrapper.append(card);
     });
 
-
+    catchMail.on('click',()=>{
+        if(!mailSaver.val()){
+            alert("Digite um email correto!")
+        }else{
+            alert("Email salvo com sucesso: " + mailSaver.val());
+        }
+    })
 
 });

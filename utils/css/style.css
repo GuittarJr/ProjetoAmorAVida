@@ -198,6 +198,7 @@ body {
 }
 .sectionTitle{
   font-size: 45px;
+  font-weight: bolder;
 }
 .services{
   margin-bottom: 10px;
@@ -217,7 +218,9 @@ body {
   font-weight: bolder;
   font-size: 1.5em;
 }
-
+.cardImage img{
+  box-shadow: 1px 1px 2px black;
+}
 .cardPlan{
   width: 100%;
 }
@@ -299,6 +302,10 @@ body {
   justify-content: space-evenly;
   color: white;
 }
+.followUs span{
+  display: block;
+  padding: 5px;
+}
 .followUs ul{
   margin-bottom: 0;
   list-style: none;
@@ -317,8 +324,11 @@ body {
   box-shadow: 1px 1px 2px gray;
   padding: 10px;
   border:none;
+  font-weight: bolder;
 }
-
+.mailSaver button:hover{
+  background-color: #c1bfbf;
+}
 
 .mailSaver input{
   padding: 10px ;
@@ -326,7 +336,7 @@ body {
   border: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .main-nav menu {
       display: none; /* Esconde o menu em telas pequenas inicialmente */
   }
