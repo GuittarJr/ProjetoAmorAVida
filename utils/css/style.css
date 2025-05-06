@@ -111,7 +111,7 @@ body {
     border-bottom: 3px solid white;
 }
 
-.main-nav li a:active {
+.main-nav li a.active {
     border-bottom: 3px solid white;
 }
 
